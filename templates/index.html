@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vacancies</title>
+    <style>
+        @font-face {
+            font-family: sf-pro-display;
+            src: url("../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF")
+            format("opentype");
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(
+                    195.21deg,
+                    #ffffff 0%,
+                    #e0fff9 29%,
+                    #ccf8f1 36.5%,
+                    #efeff4 64%,
+                    #e9f2fe 88%,
+                    #dfedff 100%
+            )
+            no-repeat center center fixed;
+            background-size: cover;
+            font-family: sf-pro-display;
+            margin: 0;
+            cursor: default;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .avatar-nick-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            font-size: 24px;
+        }
+
+        .avatar-nick-container img {
+            max-width: 256px;
+            max-height: 256px;
+            border-radius: 50%;
+        }
+
+        .avatar-nick-container p {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .Profile-info-container {
+            box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.07);
+            background: rgba(255, 255, 255, 1);
+            border-radius: 15px;
+            width: 80vw;
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+
+        .Profile-info-container p {
+            color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        .Profile-info-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px;
+            height: 19px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .Profile-info-line:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .top:hover {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .bottom:hover {
+            border-radius: 0 0 10px 10px;
+        }
+
+        .bottom-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0.07);
+            background: rgba(255, 255, 255, 1);
+            border-radius: 20px 20px 0px 0px;
+            width: 100vw;
+            height: 70px;
+            z-index: 1000;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .bottom-menu-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            min-height: 50px;
+        }
+
+        .bottom-menu-item p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 90px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.35);
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<h1 style="margin-top: 60px">Ваш профиль</h1>
+<div class="avatar-nick-container">
+    <img src="img/profile.png"/>
+    <p>RenatGen</p>
+</div>
+<div class="Profile-info-container">
+    <a href="../Offers/offers.hxtml" class="Profile-info-line top">
+        <p>Офферы PSP</p>
+        <b>13</b>
+    </a>
+    <hr style="width: 100%; color: rgba(0, 0, 0, 0.1); margin: 0" />
+    <a href="../TradeOffers/TradeOffers.html" class="Profile-info-line">
+        <p>Офферы для трейдеров</p>
+        <b>5</b>
+    </a>
+    <hr style="width: 100%; color: rgba(0, 0, 0, 0.1); margin: 0" />
+    <a href="../Vacancies/Vacancies.html" class="Profile-info-line bottom">
+        <p>Вакансии</p>
+        <b>4</b>
+    </a>
+</div>
+<div class="bottom-menu">
+    <a href="../Vacancies/Vacancies.html" class="bottom-menu-item">
+        <img src="../img/vacancies-bottom-menu.png" />
+        <p>Вакансии</p>
+    </a>
+    <a href="../Offers/offers.html" class="bottom-menu-item">
+        <img src="../img/offers-bot-menu.png" />
+        <p>Офферы для</p>
+        <p>Трейдеров</p>
+    </a>
+    <a href="../PaySolutions/PaySolutions.html" class="bottom-menu-item">
+        <img src="../img/paysolution-bot-menu.png" />
+        <p>Ищу платёжное</p>
+        <p>решение</p>
+    </a>
+    <a href=".Profile.html" class="bottom-menu-item">
+        <img src="../img/profile-avatar-bot-menu.png" />
+        <p style="margin-bottom: 7px; color: rgb(0, 153, 255)">Профиль</p>
+    </a>
+</div>
+</body>
+</html>
